@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Slot Game Simulation</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif; text-align: center;}
+        .slot {font-size: 2em; margin:20px;}
+        .control { margin: 20px;}
+    </style>
+</head>
+<body>
+    <h1>Slot Machine Game</h1>
+    <p id="balance">Balance: $100</p>
+    <div class="slot">
+    <span id="reel1">🍒</span> | <span id="reel2">🍋</span> | <span id="reel3">🔔</span>
+    </div>
+    <div class="control">
+        <button onclick="spin()">Spin</button>
+        <button onclick="resetGame()">Reset Game</button>
+    </div>
+
+    <p id="id"></p>
+
+    <script src="config.js"></script>
+    <script src="slotMachine.js"></script>
+</body>
+</html>
